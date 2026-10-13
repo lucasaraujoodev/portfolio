@@ -1,0 +1,89 @@
+.experiencia {
+   max-width: 1200px;
+    padding: 40px 20px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.experiencia .subtitulo {
+    color: rgb(0 46 50 / 0.4);
+}
+
+.experiencia-texto {
+    font-size: 1.5 rem;
+    line-height: 1.33;
+    max-width: 50ch;
+    margin-bottom: 60px;
+    color: #737373;
+}
+
+.experiencia strong {
+    color: #001A1C;
+    font-weight: 800;
+}
+
+.empresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    padding: 20px;
+    background-color: #f4fffd;
+    border: 2px solid  #ddfef8;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.empresa::before{
+ content: '';
+ display: block;  
+ width: 25px;
+ height: 25px; 
+ background: url('../img/seta.svg') no-repeat center;
+ background-size: contain;
+ top:20px;
+ left:-15px;
+ position: absolute;
+}
+
+.empresa-ano {
+    position: absolute;
+    color: #5C5C5C;
+    top: 20px;
+    left: -100px;
+    font-size: 0.687rem;
+}
+
+.empresa-titulo {
+    font-size:1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.empresa-texto {
+    font-size: 0.812rem;
+    line-height: 1.4;
+    color: #2E2E2E;
+    margin-top: 20px;
+    margin-right: 30px;
+    gap:20px;
+}
+.empresa-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+.empresa-habilidades li {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    border-radius: 5px;
+    background-color: #DDFEF8;
+    border: 2px solid #B6FEF2;
+    padding: 5px 15px;
+    margin-bottom: 14px;
+    margin-right: 10px;
+}
