@@ -27,7 +27,7 @@
 .empresa {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px 20px;
+    gap: 10px 30px;
     align-items: start;
     padding: 20px;
     background-color: #f4fffd;
@@ -47,6 +47,17 @@
  top:15px;
  left:-15px;
  position: absolute;
+}
+.empresa::after{
+    content: '';
+    display: block;
+    width: 4px;
+    height: 140px;
+    border-radius: 5px;
+    background-color: #B6FEF2;
+    position: absolute;
+    top:15px;
+    left:350px;
 }
 
 .empresa-ano {
@@ -70,14 +81,18 @@
     font-size: 0.812rem;
     line-height: 1.4;
     color: #2E2E2E;
-    margin-top: 20px;
-    margin-right: 30px;
-    gap:20px;
+    font-weight: 600;
+    margin-top: 5px;
 }
+.empresa-texto strong {
+    color: #001A1C;
+    font-weight: 700;
+}
+
 .empresa-habilidades {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 

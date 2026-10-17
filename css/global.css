@@ -1,5 +1,5 @@
 body {
-    font-family: 'Nexa', Helvetica, sans-serif;
+    font-family: 'Bw Modelica', Helvetica, sans-serif;
     font-weight: 600;
     margin: 0px;
     color:#161616;
@@ -11,8 +11,6 @@ h1,h2,h3, span, li{
 
 h1,h2,h3,p{
     margin:0px;
-   
-
 }
 
 ul{
