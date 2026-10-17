@@ -27,6 +27,7 @@
 .empresa {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
     align-items: start;
     padding: 20px;
     background-color: #f4fffd;
@@ -43,7 +44,7 @@
  height: 25px; 
  background: url('../img/seta.svg') no-repeat center;
  background-size: contain;
- top:20px;
+ top:15px;
  left:-15px;
  position: absolute;
 }
@@ -51,9 +52,12 @@
 .empresa-ano {
     position: absolute;
     color: #5C5C5C;
+    width: 80px;
+    text-align: right;
     top: 20px;
-    left: -100px;
+    left: -130px;
     font-size: 0.687rem;
+    margin-left: 15px;
 }
 
 .empresa-titulo {
