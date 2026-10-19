@@ -31,3 +31,12 @@ img{
     text-transform: uppercase;
     max-width: 3ch;
 }
+
+@media (max-width:1000px) {
+    .subtitulo {
+        font-size: 3rem;
+        max-width: initial;
+        text-transform: capitalize;
+        text-align: center;
+    }
+}
