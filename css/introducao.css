@@ -10,8 +10,8 @@
 
 .introducao h1 {
   font-size: 3rem;
-  line-height: 1.12;
-  margin-bottom: 15px;
+  line-height: 1.30;
+  margin-bottom: 5px;
   background-image: linear-gradient(45deg, #2e2e2e, #5c5c5c);
   -webkit-background-clip: text;
   background-clip: text;
@@ -60,9 +60,19 @@
 }
 @media (max-width: 600px) {
   .introducao {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 0px;
   }
   .introducao img {
-    display: none;
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-bottom: -70px;
+  }
+  .introducao div {
+    order: 1;
   }
 }
