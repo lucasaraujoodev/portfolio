@@ -33,8 +33,13 @@
   color: #1e9487;
   display: block;
 }
-.logo {
-  position: relative;
+.header-logo {
+   user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+   pointer-events: none;
+  
 }
 .menu-icon{
   display: none;

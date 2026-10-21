@@ -1,0 +1,44 @@
+.elemento-intro,
+.elemento-exp,
+.elemento-contato,
+.elemento-rodape {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+   pointer-events: none;
+}
+
+.elemento-intro {
+  position: absolute;
+  object-fit: contain;
+  right: 95%;
+  width: 35%;
+  z-index: -1;
+}
+.elemento-exp {
+  position: absolute;
+  object-fit: contain;
+  top: 100%;
+  right: -340px;
+}
+.elemento-contato {
+  position: absolute;
+  object-fit: contain;
+  top: -450px;
+  left: -340px;
+}
+.elemento-rodape {
+  position: absolute;
+  object-fit: contain;
+  bottom: 0px;
+  right: -325px;
+}
+@media (max-width: 1200px) {
+  .elemento-intro,
+  .elemento-exp,
+  .elemento-contato,
+  .elemento-rodape {
+    display: none; /* Esconde em telas de celular se necessário */
+  }
+}

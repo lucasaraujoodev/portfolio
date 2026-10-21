@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  min-width: 100vw;
   height: 800px;
   margin-top: 40px;
   padding: 80px 0;
@@ -102,6 +103,7 @@
   border-radius: 5px;
   box-sizing: border-box;
   position: relative;
+  flex-shrink: 0;
 }
 .faculdade-seta {
   position: absolute;
