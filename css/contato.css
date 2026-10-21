@@ -40,7 +40,7 @@
   line-height: 1.33;
 }
 .footer-right {
-  margin-left: 110px;
+  margin-left:110px;
   display: flex;
   align-items: center;
 }
@@ -73,4 +73,30 @@
   display: flex;
   justify-content: center;
   align-items: end;
+}
+@media (max-width: 1050px) {
+ .footer-logo {
+  position: absolute;
+  height: 56px;
+  width: 59px;
+  top: -90px;
+  left: 40px;
+}
+  .footer-container{
+    margin-top: 120px;
+
+  }
+  .footer-grid{
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 80px;
+  }
+.footer-right{
+  margin-left: 0;
+  margin-top: 40px;
+}
+.footer-direitos{
+  margin-top: 175px;
+}
 }
