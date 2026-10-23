@@ -1,42 +1,46 @@
+:root {
+  --largura-ref: 1500px;
+   --ritmo: 0.65;   /* largura em que o layout está perfeito */
+}
 .elemento-intro,
 .elemento-exp,
 .elemento-contato,
 .elemento-rodape {
+  position: absolute;
+  object-fit: contain;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   pointer-events: none;
 }
-
 .elemento-intro {
-  position: absolute;
-  object-fit: contain;
+  right: 95%;
   width: 35%;
   z-index: -1;
-  left: -300px;
-  transform: translateX(clamp(-80px, -10vw, 0px));
+  /* ancorada à esquerda da seção: anda para a direita */
+  transform: translateX(clamp(0px, calc((var(--largura-ref) - 100vw) * var(--ritmo)), 145px));
 }
+
 .elemento-exp {
-  position: absolute;
-  object-fit: contain;
   top: 100%;
-  right: -165px;
-  transform: translateX(clamp(0px, 10vw, 80px));
+  right: -340px;
+  /* ancorada à direita: anda para a esquerda */
+  transform: translateX(calc(-1 * clamp(0px, calc((var(--largura-ref) - 100vw) * var(--ritmo)), 340px)));
 }
+
 .elemento-contato {
-  position: absolute;
-  object-fit: contain;
   top: -450px;
-  left: -165px;
-  transform: translateX(clamp(-80px, -10vw, 0px));
+  left: -340px;
+  /* ancorada à esquerda: anda para a direita */
+  transform: translateX(clamp(0px, calc((var(--largura-ref) - 100vw) * var(--ritmo)), 340px));
 }
+
 .elemento-rodape {
-  position: absolute;
-  object-fit: contain;
-  bottom: 0px;
-  right: -145px;
-  transform: translateX(clamp(0px, 10vw, 80px));
+  bottom: 0;
+  right: -325px;
+  /* ancorada à direita: anda para a esquerda */
+  transform: translateX(calc(-1 * clamp(0px, calc((var(--largura-ref) - 100vw) * var(--ritmo)), 325px)));
 }
 @media (max-width: 1050px) {
   .elemento-intro,

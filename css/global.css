@@ -45,6 +45,10 @@ img {
   text-transform: uppercase;
   max-width: 3ch;
 }
+.contato .introducao .experiencia {
+    position: relative;
+  overflow-x: clip;
+}
 @media(max-width: 1800px){
   body {
     zoom: 0.8;
