@@ -15,24 +15,28 @@
   right: 95%;
   width: 35%;
   z-index: -1;
+  transform: translateX(clamp(-80px, -10vw, 0px));
 }
 .elemento-exp {
   position: absolute;
   object-fit: contain;
   top: 100%;
   right: -340px;
+  transform: translateX(clamp(0px, 10vw, 80px));
 }
 .elemento-contato {
   position: absolute;
   object-fit: contain;
   top: -450px;
   left: -340px;
+  transform: translateX(clamp(-80px, -10vw, 0px));
 }
 .elemento-rodape {
   position: absolute;
   object-fit: contain;
   bottom: 0px;
   right: -325px;
+  transform: translateX(clamp(0px, 10vw, 80px));
 }
 @media (max-width: 1200px) {
   .elemento-intro,
