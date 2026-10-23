@@ -61,6 +61,11 @@
   width: 32px;
   height: 32px;
   object-fit: contain;
+   user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
 }
 .social-texto {
   color: #ffff;
