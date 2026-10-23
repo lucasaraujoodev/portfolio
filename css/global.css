@@ -5,6 +5,7 @@ body {
   color: #161616;
   min-height: 100vh;
   width: 100%;
+  zoom: 0.8;
 }
 body, html {
   width: 100%;
