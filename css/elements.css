@@ -12,33 +12,33 @@
 .elemento-intro {
   position: absolute;
   object-fit: contain;
-  right: 95%;
   width: 35%;
   z-index: -1;
+  left: -300px;
   transform: translateX(clamp(-80px, -10vw, 0px));
 }
 .elemento-exp {
   position: absolute;
   object-fit: contain;
   top: 100%;
-  right: -340px;
+  right: -165px;
   transform: translateX(clamp(0px, 10vw, 80px));
 }
 .elemento-contato {
   position: absolute;
   object-fit: contain;
   top: -450px;
-  left: -340px;
+  left: -165px;
   transform: translateX(clamp(-80px, -10vw, 0px));
 }
 .elemento-rodape {
   position: absolute;
   object-fit: contain;
   bottom: 0px;
-  right: -325px;
+  right: -145px;
   transform: translateX(clamp(0px, 10vw, 80px));
 }
-@media (max-width: 1200px) {
+@media (max-width: 1050px) {
   .elemento-intro,
   .elemento-exp,
   .elemento-contato,
