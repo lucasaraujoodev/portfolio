@@ -1,10 +1,15 @@
 body {
   font-family: "Inter", Helvetica, sans-serif;
   font-weight: 600;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   color: #161616;
   min-height: 100vh;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.conteudo-principal {
+  flex: 1;
 }
 body,
 html {
@@ -50,11 +55,6 @@ img {
 .contato .introducao .experiencia {
   position: relative;
   overflow-x: clip;
-}
-@media (max-width: 1800px) {
-  body {
-    zoom: 0.8;
-  }
 }
 
 @media (max-width: 1050px) {

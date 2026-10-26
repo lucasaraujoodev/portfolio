@@ -1,6 +1,12 @@
-:root {
-  --largura-ref: 1500px;
-   --ritmo: 0.65;   /* largura em que o layout está perfeito */
+.elemento-container{
+  width: 100%;
+    margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0;
+}
+.elemento-container img {
+  display: block; /* Remove o espaçamento inferior padrão de imagens */
+  margin: 0 auto;
 }
 .elemento-intro,
 .elemento-exp,
@@ -15,32 +21,22 @@
   pointer-events: none;
 }
 .elemento-intro {
-  right: 95%;
-  width: 35%;
+  top:60px;
+  height: 20%;
   z-index: -1;
-  /* ancorada à esquerda da seção: anda para a direita */
-  transform: translateX(clamp(0px, calc((var(--largura-ref) - 100vw) * var(--ritmo)), 145px));
 }
-
-.elemento-exp {
-  top: 100%;
-  right: -340px;
-  /* ancorada à direita: anda para a esquerda */
-  transform: translateX(calc(-1 * clamp(0px, calc((var(--largura-ref) - 100vw) * var(--ritmo)), 340px)));
+.elemento-exp{
+  right: 0px;
+  top: 42%;
+  justify-self: flex-end;
 }
-
-.elemento-contato {
-  top: -450px;
-  left: -340px;
-  /* ancorada à esquerda: anda para a direita */
-  transform: translateX(clamp(0px, calc((var(--largura-ref) - 100vw) * var(--ritmo)), 340px));
+.elemento-contato{
+  transform: translateY(-130px);
 }
-
 .elemento-rodape {
-  bottom: 0;
-  right: -325px;
-  /* ancorada à direita: anda para a esquerda */
-  transform: translateX(calc(-1 * clamp(0px, calc((var(--largura-ref) - 100vw) * var(--ritmo)), 325px)));
+  right: 0px;
+  bottom: 0px;
+  justify-self: flex-end;
 }
 @media (max-width: 1050px) {
   .elemento-intro,

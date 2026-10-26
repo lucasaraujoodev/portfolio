@@ -15,8 +15,7 @@
   justify-content: center;
   width: 100%;
   min-width: 100vw;
-  height: 1000px;
-  padding: 0px 0;
+  height: auto;
   background-image: linear-gradient(-8deg, #002a2d, #001112);
 }
 .footer-logo {
